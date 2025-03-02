@@ -24,4 +24,7 @@ git branch
 ### Get the Remote Branch name:  
 git remote -v  
 
+### Get the changes from Remote to Local:  
+git pull origin  
+
 
