@@ -27,4 +27,12 @@ git remote -v
 ### Get the changes from Remote to Local:  
 git pull origin  
 
+### Generate Public Key:  
+ssh-keygen -t rsa -b 4096 -C "ha133@gmail.com"  
+
+### Login by ssh-key  
+ssh -T git@github.com  
+
+### Make an empty Repo to uploade project form Local to Remote:  
+git init
 
