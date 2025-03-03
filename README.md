@@ -30,30 +30,65 @@ git pull origin
 ### Generate Public Key:  
 ssh-keygen -t rsa -b 4096 -C "ha133@gmail.com"  
 
-### Login by ssh-key  
+### Login by ssh-key:  
 ssh -T git@github.com  
 
 ### Make an empty Repo to uploade project form Local to Remote:  
 git init
 
-### Make an Alias  
+### Make an Alias:  
 git config --global alias.st status  
 
-### Make new branch  
+### Make new branch:  
 git branch branchName  
 
-### Switch to Branch  
+### Switch to Branch:  
 git checkout branchName  
 
-### Safe Delete branch  
+### Safe Delete branch:  
 git branch -d branchName  
 
-### Forced Delete branch  
+### Forced Delete branch:  
 git branch -D branchName  
 
-### Make new branch and Switch to it  
+### Make new branch and Switch to it:  
 git checkout -b branchName  
 
-### Rename branch  
+### Rename branch:  
 git branck -m branchName  
 
+### Save the changes in the Stash:  
+git stash  
+
+### Get the Stash list:  
+git stash list  
+
+### Extact from the Stash:  
+git stash pop  
+
+### Save the changes in the Stash with a Message:  
+git stash save "the Message"  
+
+### Extact from the Stash and Keep the Stash:  
+git stash apply  
+
+### Extact from a specific Stash:  
+git stash pop stash@{2}   
+
+### Delete Stash:  
+git stash drop stash@{1}  
+
+### Get the stash content:  
+git stash show  
+
+### Delete all stashes:  
+git stach clear  
+
+### unStage changes (unAdd):  
+git restore --staged fileName
+
+### Show the unSataged files you will Delete:  
+git clean -n
+
+### Delete the unSataged files:  
+git clean -f  
