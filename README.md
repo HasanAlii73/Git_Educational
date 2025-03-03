@@ -36,3 +36,24 @@ ssh -T git@github.com
 ### Make an empty Repo to uploade project form Local to Remote:  
 git init
 
+### Make an Alias  
+git config --global alias.st status  
+
+### Make new branch  
+git branch branchName  
+
+### Switch to Branch  
+git checkout branchName  
+
+### Safe Delete branch  
+git branch -d branchName  
+
+### Forced Delete branch  
+git branch -D branchName  
+
+### Make new branch and Switch to it  
+git checkout -b branchName  
+
+### Rename branch  
+git branck -m branchName  
+
